@@ -57,7 +57,7 @@ Channel
 /*
  * Step 1. Builds the genome index required by the mapping process
  */
-process buildIndex {
+process stupidly_long_process_to_demonstrate_overflow_of_labels_using_kubernetes {
     tag "$genome.baseName"
     
     input:
@@ -74,7 +74,7 @@ process buildIndex {
 /*
  * Step 2. Maps each read-pair by using Tophat2 mapper tool
  */
-process stupidly_long_process_to_demonstrate_overflow_of_labels_using_kubernetes {
+process mapping {
     tag "$pair_id"
      
     input:
